@@ -1,5 +1,5 @@
-body{
-background-color: #f5f5f5;
+body {
+    background-color: #f5f5f5;
 }
 
 
@@ -91,12 +91,13 @@ ul.linkedin {
 
 }
 
-i.fa.fa-search{
+i.fa.fa-search {
     margin-right: 10px;
 }
 
-input[type="text"]{
-    width: 250px;;
+input[type="text"] {
+    width: 250px;
+    ;
     height: 30px;
 }
 
@@ -115,9 +116,7 @@ input[type="text"]{
     border-right: 1px solid white;
 }
 
-.container {
-   
-}
+.container {}
 
 .card-1 {
     flex: 1;
@@ -153,30 +152,30 @@ input[type="text"]{
     width: 40px;
     height: 40px;
     margin-top: 10px;
-   
+
 }
 
-.card-2 .linkedInLogo{
+.card-2 .linkedInLogo {
     padding-top: 12px;
 }
 
 
 .linkedInLogo {
     display: flex;
-    
+
 }
 
 .details {
     align-items: center;
     margin-left: 8px;
     font-weight: 400;
-  
+
 
 }
 
 p.start {
     border-bottom: 1px solid #e6e9ec;
-     font-size: 15px;
+    font-size: 15px;
     padding-top: 12px;
     padding-bottom: 12px;
 }
@@ -185,16 +184,16 @@ p.start {
 
 .details p {
     color: rgba(0, 0, 0, .6);
-    
+
 }
 
 p.covid {
     line-height: inherit !important;
-    color: rgba(0,0,0,.9);
+    color: rgba(0, 0, 0, .9);
     font-size: 15px;
     line-height: 1.2rem;
     padding-top: 12px;
-    
+
 }
 
 
@@ -264,7 +263,7 @@ likeComment-footer a i {
 .likeComment-footer a i:hover {
     color: rgba(0, 0, 0, .75);
     background-color: hsla(0, 0%, 81.2%, .25);
-    
+
 
 
 }
@@ -323,14 +322,20 @@ i.far.fa-paper-plane {
     color: gray;
 }
 
-span.seeMore{
+span.seeMore {
     display: none;
 }
 
 
 
 /********* Media Queries **************/
-@media screen and (max-width : 700px) {
+@media screen and (max-width : 600px) {
+    
+    ul.linkedin{
+        width: 100%;
+        margin: 0;s
+    }
+    
     ul.linkedin li:not(:nth-child(2)) {
         display: none;
     }
@@ -348,13 +353,13 @@ span.seeMore{
     }
 
     input[type="text"] {
-        min-width: 80%;
-        
+        max-width: 70%;
+
         height: 27px;
-        margin-left: 25px;
+        margin-left: 5px;
     }
 
-        
+
     ul.linkedin li.linkedin-user {
         display: flex;
         order: 1;
@@ -366,6 +371,8 @@ span.seeMore{
     ul.linkedin li:nth-child(6) {
         display: flex;
         order: 3;
+        margin-right: auto;
+
 
 
     }
@@ -373,35 +380,35 @@ span.seeMore{
     ul.linkedin {
         background-color: #0e76a8;
     }
-    
-     i.fa.fa-search{
+
+    i.fa.fa-search {
         color: #fff;
     }
 }
 
-#more{
+#more {
     display: none;
 }
 
-#seeMoreButton{
+#seeMoreButton {
     border: none;
     cursor: pointer;
 }
 
-#seeMoreButton:focus{
+#seeMoreButton:focus {
     outline: none;
 }
 
 
 
-@media screen and (min-width:800px){
-   
-    .container{
+@media screen and (min-width:800px) {
+
+    .container {
         display: flex;
     }
-    
-    i.fa.fa-search{
+
+    i.fa.fa-search {
         color: #fff;
     }
-   
+
 }
